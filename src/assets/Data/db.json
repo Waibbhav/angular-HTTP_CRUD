@@ -1,0 +1,22 @@
+{
+  "usersdb": [
+    {
+      "user_name": "waibbhav",
+      "designation": "SDE",
+      "salary": 20000,
+      "id": 1
+    },
+    {
+      "user_name": "soumyadeep",
+      "designation": "SDE",
+      "salary": "50000",
+      "id": 2
+    },
+    {
+      "user_name": "shreya",
+      "designation": "SDE",
+      "salary": "50000",
+      "id": 3
+    }
+  ]
+}

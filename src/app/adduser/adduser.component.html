@@ -1,0 +1,19 @@
+
+<div class="container">  
+    <h1>User Form</h1>  
+    <form [formGroup]="addForm" (ngSubmit)="dataSubmit()">  
+      <div class="form-group" >  
+        <label for="name">Name</label>  
+        <input type="text" class="form-control"  required formControlName ="user_name">  
+      </div>  
+      <div class="form-group">  
+        <label for="designation">Designation</label>  
+        <input type="text" class="form-control"  formControlName ="designation">  
+      </div>  
+      <div class="form-group">  
+        <label for="salary">salary</label>  
+        <input type="text" class="form-control"formControlName ="salary">  
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>  
+    </form>  
+</div>  

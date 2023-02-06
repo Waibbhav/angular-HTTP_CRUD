@@ -1,0 +1,33 @@
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+</style>
+
+<table style="width:100%" id="myTable">
+
+  <tr>
+    <th>user Id</th>
+    <th>Username</th>
+    <th>Designation</th>
+  </tr>
+
+  <tr *ngFor="let x of allusers">
+    <td><strong class="userid">{{x.id}}</strong></td>
+    <td>{{x.user_name}}</td>
+    <td>{{x.designation}}</td>
+    <td>
+      <button routerLink="update/{{x.id}}">Update</button>
+      &nbsp;
+      <button class="btnSelect" (click)="delet(x)">Delete</button>
+    </td>
+  </tr>
+</table>
+
+<button routerLink="/add">Add user</button>
+&nbsp;
+<button (click)="refresh()">refresh</button>
+
+<router-outlet></router-outlet>
